@@ -1,0 +1,65 @@
+<!doctype html>
+<html ng-app="bedrock">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Bedrock</title>
+
+        
+        <!-- bootstrap css -->
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="assets/css/bedrock.css">
+       
+    </head>
+    <body ng-controller="MainCtrl">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar">
+                    <br><br>
+                    <h1>B e d r o c k</h1> <small> &nbsp &nbsp &nbsp.... you gonna need it!</small><br><br>
+                    <ul class="nav nav-sidebar">
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Category</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                    <div ng-init="hello='lovers..'">
+                        <h1>{{hello}}</h1>
+                        <button type="button" class="close">delete</button>
+                        <button type="button" class="btn btn-link"><span class="glyphicon glyphicon-pencil"></span></button>
+                        <a href="#" target="_blank">Bookmark</a>
+                    </div>
+                    <div>
+                        <button type="button" class="close">delete</button>
+                        <button type="button" class="btn btn-link"><span class="glyphicon glyphicon-pencil"></span></button>
+                        <a href="#" target="_blank">Bookmark</a>
+                    </div>
+                    <div>
+                        <button type="button" class="close">delete</button>
+                        <button type="button" class="btn btn-link"><span class="glyphicon glyphicon-pencil"></span></button>
+                        <a href="#" target="_blank">Bookmark</a>
+                    </div>
+                    <hr/>
+                </div>
+            </div>
+        </div>
+        
+        <!-- jquery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- bootstrap.min.js -->
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- lodash -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+
+        <!-- angular -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+        
+        <!-- custom script -->
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
