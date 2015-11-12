@@ -18,19 +18,17 @@
             <div class="row">
                 <div class="col-sm-3 col-md-2 sidebar">
                     <br><br>
-                    <h1>B e d r o c k</h1> <small> &nbsp &nbsp &nbsp.... you gonna need it!</small><br><br>
+                    <h1>B e d r o c k</h1> <small> &nbsp &nbsp &nbsp.... beyond bookmark!</small><br><br>
                     <ul class="nav nav-sidebar">
-                        <li><a href="#">Category</a></li>
-                        <li><a href="#">Category</a></li>
-                        <li><a href="#">Category</a></li>
+                        <li ng-repeat="category in categories">
+                            <a href="#">{{category.name}}</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                    <div ng-init="hello='lovers..'">
-                        <h1>{{hello}}</h1>
+                    <div ng-repeat="bookmark in bookmarks">
                         <button type="button" class="close">delete</button>
                         <button type="button" class="btn btn-link"><span class="glyphicon glyphicon-pencil"></span></button>
-                        <a href="#" target="_blank">Bookmark</a>
+                        <a href="{{bookmark.url}}" target="_blank">{{bookmark.title}}</a>
                     </div>
                     <div>
                         <button type="button" class="close">delete</button>
