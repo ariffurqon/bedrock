@@ -22,4 +22,17 @@ angular.module('bedrock', [
 	          {"id": 7, "title": "Dr. Frank Lipman", "url": "http://www.drfranklipman.com", "category": "Health" },
 	          {"id": 8, "title": "Livestrong", "url": "http://www.Livestrong.com", "category": "Health" }
 	      ];
+
+	$scope.currentCategory = null;
+
+	function setCurrentCategory(category) {
+		$scope.currentCategory = category;
+	}
+ 
+	function isCurrentCategory(category) {
+		return $scope.currentCategory !== null && category.name === $scope.currentCategory.name;
+	}
+
+	$scope.setCurrentCategory = setCurrentCategory;
+	$scope.isCurrentCategory = isCurrentCategory;
 });
