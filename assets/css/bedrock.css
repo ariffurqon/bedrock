@@ -13,8 +13,6 @@ body {
     background: linear-gradient(to right, rgba(235,233,249,1) 0%, rgba(138,119,224,1) 7%, rgba(216,208,239,1) 25%, rgba(40,35,56,1) 100%);
 }
 
-
-
 a {
     color: #373A36;
     font-size: 24px;
@@ -40,8 +38,8 @@ a:hover {
 }
 
 .sidebar a {
-    color: #b3d9ff;
-    font-size: 30px;
+    color: #5bc0de;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -50,7 +48,9 @@ a:hover {
     border-bottom: 1px solid #EEE;
 }
 
-
+.logo {
+    padding: 30px;
+}
 
 .sidebar {
     display: none;
@@ -84,9 +84,10 @@ a:hover {
     color: #5bc0de !important;
 }
 
+
 .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    /*background-color: #D5DBD8;*/
+    background-color: #D5DBD8;
     background: rgba(235,233,249,1);
     background: -moz-linear-gradient(left, rgba(235,233,249,1) 0%, rgba(138,119,224,1) 7%, rgba(216,208,239,1) 25%, rgba(40,35,56,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(235,233,249,1)), color-stop(7%, rgba(138,119,224,1)), color-stop(25%, rgba(216,208,239,1)), color-stop(100%, rgba(40,35,56,1)));

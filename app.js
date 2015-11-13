@@ -35,4 +35,43 @@ angular.module('bedrock', [
 
 	$scope.setCurrentCategory = setCurrentCategory;
 	$scope.isCurrentCategory = isCurrentCategory;
+
+	//creating and editing states
+
+	$scope.isCreating = false;
+	$scope.isEditing = false;
+
+	function startCreating() {
+		$scope.isCreating = true;
+		$scope.isEditing = false;
+	}
+
+	function cancelCreating() {
+		$scope.isCreating = false;
+	}
+
+	function startEditing() {
+		$scope.isCreating = false;
+		$scope.isEditing = true;
+	}
+
+	function cancelEditing() {
+		$scope.isEditing = false;
+	}
+
+	function shouldShowCreating() {
+		return $scope.currentCategory && !$scope.isEditing;
+	}
+
+	function shouldShowEditing() {
+		return $scope.isEditing && !$scope.isCreating;
+	}
+
+	$scope.startCreating = startCreating;
+	$scope.cancelCreating = cancelCreating;
+	$scope.startEditing = startEditing;
+	$scope.cancelEditing = cancelEditing;
+	$scope.shouldShowCreating = shouldShowCreating;
+	$scope.shouldShowEditing = shouldShowEditing; 
+
 });
